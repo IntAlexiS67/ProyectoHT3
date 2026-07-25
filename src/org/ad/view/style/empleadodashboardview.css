@@ -1,0 +1,58 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+/* =========================================================
+   HOJA DE ESTILOS - PANEL DE EMPLEADO
+   ========================================================= */
+
+/* Fondo general para AnchorPane, root y la clase mainFxmlClass */
+#AnchorPane {
+    -fx-background-color: linear-gradient(to bottom right, #581825, #2a0b12) !important;
+}
+
+/* Regla general para textos */
+.label {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Mensaje de Bienvenida en la esquina */
+.label-bienvenida {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+/* Título central */
+.label-titulo-empleado {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+/* Botón de Salir */
+.button-salir {
+    -fx-background-color: #9e2a42;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 18;
+    -fx-cursor: hand;
+    -fx-border-color: #e06d85;
+    -fx-border-radius: 6;
+    -fx-border-width: 1px;
+}
+
+.button-salir:hover {
+    -fx-background-color: #be3552;
+}
+
+.button-salir:pressed {
+    -fx-background-color: #7a1d30;
+}
+}

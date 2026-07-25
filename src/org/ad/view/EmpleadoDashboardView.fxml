@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, #581825, #2a0b12);" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ad.controller.EmpleadoDashboardController">
+    <stylesheets>
+        <URL value="@/org/ad/view/style/empleadodashboardview.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="btnSalir" layoutX="40.0" layoutY="30.0" mnemonicParsing="false" onAction="#eventoCerrarSesion" prefWidth="110.0" styleClass="button-salir" text="Salir" />
+      <Label fx:id="lblBienvenida" alignment="CENTER_RIGHT" layoutX="200.0" layoutY="35.0" prefWidth="360.0" styleClass="label-bienvenida" text="Bienvenido" />
+      <Label alignment="CENTER" layoutX="50.0" layoutY="180.0" prefWidth="500.0" styleClass="label-titulo-empleado" text="PANEL DE EMPLEADO" />
+   </children>
+</AnchorPane>
