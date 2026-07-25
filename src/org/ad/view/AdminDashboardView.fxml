@@ -5,13 +5,15 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21.0.1" fx:controller="org.ad.controller.AdminDashboardController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ad.controller.AdminDashboardController">
     <stylesheets>
         <URL value="@/org/ad/view/style/admindashboardview.css" />
     </stylesheets>
    <children>
-      <Label fx:id="lblBienvenida" layoutX="498.0" layoutY="59.0" text="Bienvenida" />
-      <Button layoutX="71.0" layoutY="64.0" mnemonicParsing="false" prefWidth="110.0" text="Salir" />
-      <Label layoutX="251.0" layoutY="225.0" text="ADMINISTRACIÓN" />
+      <Button layoutX="40.0" layoutY="30.0" mnemonicParsing="false" prefWidth="110.0" styleClass="button-salir" text="Salir" />
+      
+      <Label fx:id="lblBienvenida" alignment="CENTER_RIGHT" layoutX="200.0" layoutY="35.0" prefWidth="360.0" styleClass="label-bienvenida" text="Bienvenido" />
+      
+      <Label alignment="CENTER" layoutX="50.0" layoutY="180.0" prefWidth="500.0" styleClass="label-titulo-admin" text="ADMINISTRACIÓN" />
    </children>
 </AnchorPane>
