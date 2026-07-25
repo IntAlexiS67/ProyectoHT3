@@ -22,7 +22,6 @@ public class CajeroDashboardController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // Inicialización básica si es necesaria
     }    
 
     public void iniciarUsuario(Usuario usuario) {
@@ -37,17 +36,17 @@ public class CajeroDashboardController implements Initializable {
             FXMLLoader cargadorFXML = new FXMLLoader(getClass().getResource("/org/ad/view/InicioSesionView.fxml"));
             Parent raiz = cargadorFXML.load();
             
-            Stage escenario = new Stage();
-            escenario.setScene(new Scene(raiz));
-            escenario.setTitle("Inicio de Sesión");
-            escenario.show();
+            Stage escenarioLogin = new Stage();
+            escenarioLogin.setScene(new Scene(raiz));
+            escenarioLogin.setTitle("Inicio de Sesión");
+            escenarioLogin.show();
 
-            // Cerrar la ventana actual
             Stage escenaActual = (Stage) ((Node) evento.getSource()).getScene().getWindow();
             escenaActual.close();
 
         } catch (IOException e) {
-            System.err.println("Error al regresar a la vista de login: " + e.getMessage());
+            System.err.println("Error al regresar al login: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }

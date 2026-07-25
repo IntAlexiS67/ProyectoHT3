@@ -9,9 +9,10 @@
     <stylesheets>
         <URL value="@/org/ad/view/style/empleadodashboardview.css" />
     </stylesheets>
-   <children>
-      <Button fx:id="btnSalir" layoutX="40.0" layoutY="30.0" mnemonicParsing="false" onAction="#eventoCerrarSesion" prefWidth="110.0" styleClass="button-salir" text="Salir" />
-      <Label fx:id="lblBienvenida" alignment="CENTER_RIGHT" layoutX="200.0" layoutY="35.0" prefWidth="360.0" styleClass="label-bienvenida" text="Bienvenido" />
-      <Label alignment="CENTER" layoutX="50.0" layoutY="180.0" prefWidth="500.0" styleClass="label-titulo-empleado" text="PANEL DE EMPLEADO" />
-   </children>
+    <children>
+        <Button fx:id="btnSalir" layoutX="40.0" layoutY="30.0" mnemonicParsing="false" onAction="#eventoCerrarSesion" prefWidth="110.0" styleClass="button-salir" text="Salir" />
+
+        <Label fx:id="lblBienvenida" alignment="CENTER_RIGHT" layoutX="200.0" layoutY="35.0" prefWidth="360.0" styleClass="label-bienvenida" text="Bienvenido" />
+        <Label alignment="CENTER" layoutX="50.0" layoutY="180.0" prefWidth="500.0" styleClass="label-titulo-empleado" text="PANEL DE EMPLEADO" />
+    </children>
 </AnchorPane>
