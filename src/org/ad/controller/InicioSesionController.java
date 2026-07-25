@@ -69,6 +69,8 @@ public class InicioSesionController implements Initializable {
                 tituloDashboard = "Panel de Administración";
                 break;
             case "empleado":
+                rutaFXML = "/org/ad/view/EmpleadoDashboardView.fxml";
+                tituloDashboard = "Panel de Empleado";
                 break;
         }
         
@@ -76,16 +78,24 @@ public class InicioSesionController implements Initializable {
             FXMLLoader cargadorFXML = new FXMLLoader(getClass().getResource(rutaFXML));
             Parent raiz = cargadorFXML.load();
             
-            // Inyectar usuario al controlador antes de mostrar la escena
-            AdminDashboardController controlador = cargadorFXML.getController();
-            controlador.iniciarUsuario(usuario);
+            // Inyectar usuario al controlador correspondiente según el rol
+            switch(usuario.getRol().toLowerCase()){
+                case "admin":
+                    AdminDashboardController ctrlAdmin = cargadorFXML.getController();
+                    ctrlAdmin.iniciarUsuario(usuario);
+                    break;
+                case "empleado":
+                    EmpleadoDashboardController ctrlEmpleado = cargadorFXML.getController();
+                    ctrlEmpleado.iniciarUsuario(usuario);
+                    break;
+            }
             
             Stage escenario = new Stage();
             escenario.setScene(new Scene(raiz));
             escenario.setTitle(tituloDashboard);
             escenario.show();
             
-            // Cierra la ventana actual usando el evento (evita el NullPointerException)
+            // Cierra la ventana actual usando el evento
             Stage escenaActual = (Stage) ((Node) evento.getSource()).getScene().getWindow();
             escenaActual.close();
             

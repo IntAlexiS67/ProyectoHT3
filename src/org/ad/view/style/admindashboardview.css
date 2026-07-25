@@ -3,5 +3,58 @@
  */
 
 .mainFxmlClass {
+/* =========================================================
+   HOJA DE ESTILOS - PANEL DE ADMINISTRACIÓN (TEMA VINO)
+   ========================================================= */
 
+/* Regla general para los textos */
+.label {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Fondo principal de la ventana */
+.root, #AnchorPane {
+    -fx-background-color: linear-gradient(to bottom right, #581825, #2a0b12);
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Mensaje de Bienvenida */
+.label-bienvenida {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f3e5e8;
+}
+
+/* Título central del Dashboard */
+.label-titulo-admin {
+    -fx-font-family: "Trebuchet MS", "Century Gothic", "Segoe UI Semibold", sans-serif;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 8, 0, 0, 2);
+}
+
+/* Botón de Salir */
+.button-salir {
+    -fx-background-color: #9e2a42;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 18;
+    -fx-cursor: hand;
+    -fx-border-color: #e06d85;
+    -fx-border-radius: 6;
+    -fx-border-width: 1px;
+}
+
+.button-salir:hover {
+    -fx-background-color: #be3552;
+}
+
+.button-salir:pressed {
+    -fx-background-color: #7a1d30;
+}
 }

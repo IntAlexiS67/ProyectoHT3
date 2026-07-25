@@ -17,6 +17,12 @@
         <URL value="@/org/ad/view/style/iniciosesionview.css" />
     </stylesheets>
    <children>
+        <Label alignment="CENTER" layoutX="50.0" layoutY="30.0" prefWidth="500.0" text="Inicio de Sesión">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Label>
+
         <StackPane layoutX="35.0" layoutY="85.0" prefHeight="220.0" prefWidth="530.0">
      <children>
         <GridPane>

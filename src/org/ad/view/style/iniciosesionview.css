@@ -23,7 +23,7 @@ HOJA DE ESTILOS - INICIO DE SESIÓN (ESTILO VINO ELEGANTE)
 -fx-font-family: "Trebuchet MS", "Century Gothic", "Segoe UI Semibold", sans-serif;
 -fx-font-size: 30px;
 -fx-font-weight: bold;
--fx-text-fill: #ffffff !important;
+-fx-text-fill: #ffffff;
 -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 8, 0, 0, 2);
 }
 
