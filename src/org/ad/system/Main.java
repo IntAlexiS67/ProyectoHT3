@@ -14,11 +14,14 @@ public class Main extends Application {
     }
  
     @Override
-    public void start(Stage escenarioPrincipal) throws Exception {
-           //convertir fxml en nodo raiz
-           Parent raiz = FXMLLoader.load(getClass().getResource("/org/ad/view/InicioSesionView.fxml"));
-           Scene escena = new Scene(raiz);
-           escenarioPrincipal.setScene(escena);
-           escenarioPrincipal.show();
-    }
+public void start(Stage escenarioPrincipal) throws Exception {
+    // convertir fxml en nodo raiz
+    Parent raiz = FXMLLoader.load(getClass().getResource("/org/ad/view/InicioSesionView.fxml"));
+    Scene escena = new Scene(raiz);
+    
+    escena.getStylesheets().add(getClass().getResource("/org/ad/view/style/iniciosesionview.css").toExternalForm());
+    
+    escenarioPrincipal.setScene(escena);
+    escenarioPrincipal.show();
+}
 }

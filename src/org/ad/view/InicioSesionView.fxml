@@ -17,36 +17,33 @@
         <URL value="@/org/ad/view/style/iniciosesionview.css" />
     </stylesheets>
    <children>
-      <StackPane layoutX="34.0" layoutY="75.0" prefHeight="250.0" prefWidth="550.0">
-         <children>
-            <GridPane>
-              <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="28.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="170.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="303.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="113.0" minWidth="10.0" prefWidth="30.0" />
-              </columnConstraints>
-              <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <Label text="Usuario" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Label text="Contraseña" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField fx:id="txtUsuario" prefHeight="30.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <PasswordField fx:id="txtPassword" prefHeight="30.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-               </children>
-            </GridPane>
-         </children>
-      </StackPane>
-      <Label layoutX="213.0" layoutY="14.0" prefHeight="34.0" prefWidth="221.0" text="Inicio de Sesión" textAlignment="CENTER">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <Label fx:id="lblMensaje" layoutX="287.0" layoutY="325.0" text="Mensaje" textAlignment="CENTER" textFill="#cd1e0e" />
-      <Button fx:id="btniniciarsesion" layoutX="264.0" layoutY="361.0" mnemonicParsing="false" onAction="#evetoInicioSesion" prefWidth="90.0" text="INICIAR" />
+        <StackPane layoutX="35.0" layoutY="85.0" prefHeight="220.0" prefWidth="530.0">
+     <children>
+        <GridPane>
+          <columnConstraints>
+              <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="28.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="150.0" />
+              <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="320.0" />
+              <ColumnConstraints hgrow="SOMETIMES" maxWidth="113.0" minWidth="10.0" prefWidth="30.0" />
+          </columnConstraints>
+          <rowConstraints>
+              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+           <children>
+              <Label styleClass="label-field" text="Usuario" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+              <Label styleClass="label-field" text="Contraseña" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+              <TextField fx:id="txtUsuario" prefHeight="36.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+              <PasswordField fx:id="txtPassword" prefHeight="36.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+           </children>
+        </GridPane>
+     </children>
+  </StackPane>
+  
+  <Label fx:id="lblMensaje" alignment="CENTER" layoutX="50.0" layoutY="305.0" prefWidth="500.0" styleClass="label-field" text="" textAlignment="CENTER" />
+  <Button fx:id="btniniciarsesion" layoutX="225.0" layoutY="335.0" mnemonicParsing="false" onAction="#evetoInicioSesion" prefWidth="150.0" styleClass="button-iniciar" text="INICIAR" />
+
    </children>
 </AnchorPane>
